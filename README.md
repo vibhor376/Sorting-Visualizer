@@ -1,2 +1,4 @@
 # Sorting-Visualizer
-A web application made using HTML, CSS, JavaScript to visualize how various sorting algorithms work
+This is a web application built using HTML, CSS, Javascript to visualize sorting algorithms such as bubble, insertion, selection, merge, quick
+
+[Live](https://vibhor376.github.io/Sorting-Visualizer/)
