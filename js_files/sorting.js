@@ -2,7 +2,7 @@ let slider = document.getElementById("myRange");
 let speed = document.querySelector("#mySpeed");
 let bars = document.getElementById("container");
 let array = [];
-let time= 20;
+let time= 250;
 for (let i = 1; i <= slider.value; i++) {
   let randNumber = getRndInteger(0, 100);
   array.push(randNumber);
