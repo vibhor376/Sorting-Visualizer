@@ -18,9 +18,9 @@ bubbleSort.addEventListener("click", bblSort);
       transform1.style.backgroundColor="#5cdb95";
       transform2.style.backgroundColor="#5cdb95";
     }
-    document.getElementById(`bar${array.length-i-1}`).style.backgroundColor="#eee2dc";
+    document.getElementById(`bar${array.length-i-1}`).style.backgroundColor="red";
   }
-  document.getElementById(`bar${0}`).style.backgroundColor="#eee2dc";
+  document.getElementById(`bar${0}`).style.backgroundColor="red";
   enableSortingButtons();
 //   console.log(array);
 }

@@ -28,8 +28,8 @@ async function selectSort() {
       let temp = array[min];
       array[min] = array[i];
       array[i] = temp;
-      transform1.style.backgroundColor = "#eee2dc";
-      transform2.style.backgroundColor = "#eee2dc";
+      transform1.style.backgroundColor = "purple";
+      transform2.style.backgroundColor = "purple";
     
   }
   enableSortingButtons();

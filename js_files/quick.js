@@ -14,8 +14,8 @@ async function qSort(start,end){
     await qSort(mid + 1, end);  
     }else{
         if(start >= 0 && end >= 0 && start <array.length && end <array.length){
-            document.getElementById(`bar${start}`).style.background = '#eee2dc';
-            document.getElementById(`bar${end}`).style.background = '#eee2dc';
+            document.getElementById(`bar${start}`).style.background = 'cyan';
+            document.getElementById(`bar${end}`).style.background = 'cyan';
         }
     }   
 }
@@ -41,7 +41,7 @@ async function partition(low, high)
     }
     await pleaseWait(time);
     swapQuickSort(i + 1, high);
-    document.getElementById(`bar${i+1}`).style.backgroundColor="#eee2dc";
+    document.getElementById(`bar${i+1}`).style.backgroundColor="cyan";
     let temp=array[high];
     array[high]=array[i+1];
     array[i+1]=temp;

@@ -45,14 +45,14 @@ async function mergeArray(low, high) {
         let elm=document.getElementById(`bar${k}`);
         elm.style.background='#ffe400';
         elm.style.height=`${left[i]}px`;
-        elm.style.background='#eee2dc';
+        elm.style.background='orange';
         k++;i++;
         }
         else {
         let elm=document.getElementById(`bar${k}`);
         elm.style.background='#ffe400';
         elm.style.height=`${right[j]}px`;
-        elm.style.background='#eee2dc';
+        elm.style.background='orange';
         k++;j++;
         }
     }
@@ -62,7 +62,7 @@ async function mergeArray(low, high) {
         let elm=document.getElementById(`bar${k}`);
         elm.style.background='#ffe400';
         elm.style.height=`${left[i]}px`;
-        elm.style.background='#eee2dc';
+        elm.style.background='orange';
         k++;i++;
     }
 
@@ -71,7 +71,7 @@ async function mergeArray(low, high) {
         let elm=document.getElementById(`bar${k}`);
         elm.style.background='#ffe400';
         elm.style.height=`${right[j]}px`;
-        elm.style.background='#eee2dc';
+        elm.style.background='orange';
         k++;j++;
     }
 }

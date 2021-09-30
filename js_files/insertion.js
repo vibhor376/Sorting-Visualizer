@@ -14,8 +14,8 @@ async function insertSort() {
       await swap_insert(array[j], j + 1);
       array[j + 1] = array[j];
       j--;
-      transform1.style.backgroundColor = "#eee2dc";
-      transform2.style.backgroundColor = "#eee2dc";
+      transform1.style.backgroundColor = "brown";
+      transform2.style.backgroundColor = "brown";
     }
     array[j + 1] = key;
     await swap_insert(key, j+1);
