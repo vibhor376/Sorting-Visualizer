@@ -4,6 +4,39 @@ async function selectSort() {
   // console.log(array);
   console.log('select');
   disableSortingButtons();
+  document.getElementById("sortingDesicription").innerHTML = `
+  <div class="sortInfo">
+  <article class="sortInfoArticle">
+   <h2> Selection Sort</h2>
+   <p>
+   <a href="https://www.geeksforgeeks.org/selection-sort/" target="_blank">Selection Sort</a>  is an in-place comparison sorting algorithm that divides the input list into two parts: the sublist of items already sorted, which is built up from left to right at the front (left) of the list, and the sublist of items remaining to be sorted that occupy the rest of the list. Initially, the sorted sublist is empty and the unsorted sublist is the entire input list. The algorithm proceeds by finding the smallest element in the unsorted sublist, exchanging (swapping) it with the leftmost unsorted element (putting it in sorted order), and moving the sublist boundaries one element to the right.
+   <p>
+   </article>
+   <aside class="sortInfoAside">
+    <h3> Performance </h3>
+    <table>
+     <tbody>
+       <tr> 
+       <td>Worst Case Time Complexity</td>
+       <td> O(n<sup>2</sup>)</td>
+       </tr>
+       <tr> 
+       <td>Average Case Time Complexity </td>
+       <td> O(n<sup>2</sup>)</td>
+       </tr>
+       <tr> 
+       <td>Best Case Time Complexity</td>
+       <td> O(n<sup>2</sup>)</td>
+       </tr>
+       <tr> 
+       <td>Worst Case Space Complexity</td>
+       <td> O(1)</td>
+       </tr>
+     <tbody>
+    </table>
+   <aside>
+  </div>
+  `;
   for (let i = 0; i < array.length; i++) {
     let min = i;
     for (let j = i + 1; j < array.length; j++) {
@@ -42,8 +75,8 @@ function swap_select(el1, el2, i, j) {
       const transform2 = document.getElementById(`bar${j}`);
       // console.log(i);
       console.log(bars);
-      el1 *= 5;
-      el2 *= 5;
+      el1 *= 3;
+      el2 *= 3;
       console.log(transform2);
       transform1.style.height = `${el2}px`;
       transform2.style.height = `${el1}px`;

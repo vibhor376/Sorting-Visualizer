@@ -1,6 +1,43 @@
 let mergeSort=document.getElementById('mergeSort');
 mergeSort.addEventListener('click',async function () {
     disableSortingButtons();
+    document.getElementById("sortingDesicription").innerHTML = `
+    <div class="sortInfo">
+    <article class="sortInfoArticle">
+     <h2> Merge Sort</h2>
+     <p>
+     <a href="https://www.geeksforgeeks.org/merge-sort/" target="_blank">Merge Sort</a> is an efficient, stable sorting algorith that makes use of the divide and conquer strategy. Conceptually the algorithm works as follows:
+     <p>
+     <ol>
+     <li> Divide the unsorted list into n sublists, each containing one element(a list of one element is considered sorted).</li>
+     <li> Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.</li> 
+     </ol>
+     </article>
+     <aside class="sortInfoAside">
+      <h3> Performance </h3>
+      <table>
+       <tbody>
+         <tr> 
+         <td>Worst Case Time Complexity</td>
+         <td class="mx-2"> O(nlogn)</td>
+         </tr>
+         <tr> 
+         <td>Average Case Time Complexity </td>
+         <td class="mx-2"> O(nlogn)</td>
+         </tr>
+         <tr> 
+         <td>Best Case Time Complexity</td>
+         <td class="mx-2"> O(nlogn)</td>
+         </tr>
+         <tr> 
+         <td>Worst Case Space Complexity</td>
+         <td class="mx-2"> O(n)</td>
+         </tr>
+       <tbody>
+      </table>
+     <aside>
+    </div>
+    `;
     let start=0,end=array.length-1;
     await mgSort(start,end);
     enableSortingButtons();

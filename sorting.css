@@ -12,6 +12,7 @@
   --bg-color: #1a1a1d;
 }
 .bg-color{
+  font-family: 'Sora', sans-serif;
   background-color: var(--bg-color);
 }
 .container {
@@ -131,4 +132,29 @@ input:checked + .slide:before {
 }
 .theme-switch-wrapper h6{
   color: var(--primary-color);
+}
+.sortInfo{
+  color: var(--primary-color);
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 17%;
+}
+main{
+  display: block;
+  font-family: 'Sora', sans-serif;
+}
+.sortInfoArticle{
+    width: 55ch;
+    padding-right: 5ch;
+}
+.sortInfoAside{
+  padding-left: 5ch;
+  border-left: 1px solid #3a3a3c;
+}
+.sortingDesicription{
+    text-align: left;
+    width: 80%;
+    max-width: 1200px;
+    padding: 1rem;
+    margin: 0 auto;
 }

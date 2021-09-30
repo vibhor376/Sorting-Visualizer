@@ -48,7 +48,7 @@ let width = container.getBoundingClientRect();
 let barsWidth = width.width - 220;
 let len = Math.floor(barsWidth / slider.value);
 for (let i = 0; i < array.length; i++) {
-  let element = array[i] * 5;
+  let element = array[i] *3;
   let barHeight = document.createElement("div");
   bars.appendChild(barHeight);
   barHeight.className = "barHeight";
@@ -73,7 +73,7 @@ slider.addEventListener("change", () => {
   }
   let len = Math.floor(barsWidth / slider.value);
   for (let i = 0; i < slider.value; i++) {
-    let element = array[i] * 5;
+    let element = array[i] *3;
     let barHeight = document.createElement("div");
     bars.appendChild(barHeight);
     barHeight.className = "barHeight";
@@ -108,7 +108,7 @@ newArray.addEventListener("click", function () {
   }
   let len = Math.floor(barsWidth / val);
   for (let i = 0; i < val; i++) {
-    let element = array[i] * 5;
+    let element = array[i] *3;
     let barHeight = document.createElement("div");
     bars.appendChild(barHeight);
     barHeight.className = "barHeight";
@@ -147,3 +147,32 @@ async function pleaseWait(time) {
     }, time);
   });
 }
+document.getElementById("sortingDesicription").innerHTML = `
+    <div class="sortInfo">
+    <article class="sortInfoArticle">
+     <h2> Select Algorithm</h2>
+     <p>
+     You must select an algorithm before you can visualize it's execution on an array of numbers.
+     </p>
+     </article>
+     <aside class="sortInfoAside">
+      <h3> Performance </h3>
+      <table>
+       <tbody>
+         <tr> 
+         <td>Worst Case Time Complexity</td>
+         </tr>
+         <tr> 
+         <td>Average Case Time Complexity </td>
+         </tr>
+         <tr> 
+         <td>Best Case Time Complexity</td>
+         </tr>
+         <tr> 
+         <td>Worst Case Space Complexity</td>
+         </tr>
+       <tbody>
+      </table>
+     <aside>
+    </div>
+    `;

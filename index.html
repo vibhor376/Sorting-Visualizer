@@ -14,33 +14,44 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200&display=swap" rel="stylesheet">
     <title>Sorting Visualizer</title>
   </head>
   <body class="bg-color">
     <div class="container-fluid">
       <div class="row">
-      <div class="col heading" style="display: flex; justify-content: center; margin-left: 34%;">
-        <h1>Sorting Visualizer</h1>
-      </div>     
-      <div class=" col theme-switch-wrapper my-2" style="justify-content: flex-end;" >
-        <h6 class="mx-2"> Enable Dark Mode!</h6>
-        <label class="theme-switch" id="theme-switch" for="checkbox">
+        <div
+          class="col heading"
+          style="display: flex; justify-content: center; margin-left: 34%"
+        >
+          <h1>Sorting Visualizer</h1>
+        </div>
+        <div
+          class="col theme-switch-wrapper my-2"
+          style="justify-content: flex-end"
+        >
+          <h6 class="mx-2" style="font-family: 'Epilogue', sans-serif;">Enable Dark Mode!</h6>
+          <label class="theme-switch" id="theme-switch" for="checkbox">
             <input type="checkbox" id="checkbox" />
             <div class="slide round"></div>
-      </label>
+          </label>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg" style="font-family: 'Sora', sans-serif;">
       <div class="container-fluid">
         <div class="row">
           <div class="col" style="display: flex">
-            <button
-              class="btn btn-dark newArray mx-1"
-              id="newArray"
-            >
-              <b>New Array</b>
+            <button class="btn btn-dark newArray mx-1" id="newArray">
+              New Array
             </button>
           </div>
           <span class="slidecontainer col" style="display: inline-block">
@@ -69,39 +80,30 @@
         </div>
       </div>
       <div class="container-fluid">
-        <button
-          class="btn btn-dark bubbleSort"
-          id="bubbleSort"
-        >
-          <b>Bubble Sort</b>
+        <button class="btn btn-dark bubbleSort" id="bubbleSort">
+          Bubble Sort
         </button>
-        <button
-          class="btn btn-dark selectionSort"
-          id="selectionSort"
-        >
-          <b>Selection Sort</b>
+        <button class="btn btn-dark selectionSort" id="selectionSort">
+          Selection Sort
         </button>
-        <button
-          class="btn btn-dark insertionSort"
-          id="insertionSort"
-        >
-          <b>Insertion Sort</b>
+        <button class="btn btn-dark insertionSort" id="insertionSort">
+          Insertion Sort
         </button>
-        <button
-          class="btn btn-dark quickSort"
-          id="quickSort"
-        >
-          <b>Quick Sort</b>
+        <button class="btn btn-dark quickSort" id="quickSort">
+          Quick Sort
         </button>
-        <button
-          class="btn btn-dark mergeSort"
-          id="mergeSort"
-        >
-          <b> Merge Sort</b>
+        <button class="btn btn-dark mergeSort" id="mergeSort">
+          Merge Sort
         </button>
       </div>
     </nav>
+    <main>
     <div class="container my-5" id="container"></div>
+    <hr>  
+    <div id="sortingDesicription"></div>
+    </main>
+   <hr>
+    
     <script src="js_files/sorting.js"></script>
     <script src="js_files/bubble.js"></script>
     <script src="js_files/insertion.js"></script>
